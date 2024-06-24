@@ -4,251 +4,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO LINK</title>
+    <title>HTML Project</title>
     <style>
+        /* Basic styling for the entire page */
         body {
             font-family: 'Verdana', sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* Header styles */
         #header {
             background-color: #4CAF50;
-            padding: 15px;
+            padding: 10px 0;
         }
 
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+        #header table {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .nav-brand {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-size: 2em;
-            font-weight: bold;
-            color: black;
+        #header td {
+            padding: 10px;
+            text-align: center;
         }
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-links li {
-            margin: 0 10px;
-        }
-
-        .nav-links a {
+        #header a {
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.25rem;
             color: black;
         }
 
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
-
-            .nav-links li {
-                margin: 5px 0;
-            }
-        }
-
-        /* Section styles */
-        section {
+        #home,
+        #about,
+        #projects,
+        #achievements,
+        #contact {
             padding: 20px;
-            color: white;
         }
 
         #home {
             background-color: black;
+            color: white;
+            text-align: center;
         }
 
-        #about {
+        #about,
+        #achievements {
             background-color: black;
+            color: white;
         }
 
         #projects {
             background-color: #c2c0c3;
-            color: black;
-        }
-
-        #achievements {
-            background-color: black;
         }
 
         #contact {
             background-color: #c2c0c3;
-            color: black;
         }
 
-        /* Footer styles */
-        #footer1 {
-            background-color: #4CAF50;
-            padding: 15px;
-            text-align: center;
+        #contact input,
+        #contact textarea {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
         }
 
+        #footer,
         #footer2 {
-            background-color: black;
-            padding: 15px;
-            text-align: center;
-            color: #4CAF50;
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px 0;
+        }
+
+        #footer table,
+        #footer2 table {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #footer a {
+            color: black;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            #header td {
+                display: block;
+                text-align: center;
+            }
+
+            #header a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #about,
+            #projects,
+            #achievements,
+            #contact {
+                padding: 10px;
+            }
+
+            #projects img {
+                width: 100%;
+                height: auto;
+            }
+
+            #footer td,
+            #footer2 td {
+                display: block;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
     <!--Header(start)-->
-    <header id="header">
-        <div class="nav-container">
-            <div class="nav-brand">Rushikesh Ikhe</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td>
+                            <font face="Comic sans MS" size="6">
+                                <b> Rushikesh Ikhe</b>
+                            </font>
+                        </td>
+                        <td>
+                            <a href="#home">Home</a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#about">About</a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#projects">Projects</a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#achievements">Achievements</a>
+                        </td>
+                        <td>|</td>
+                        <td>
+                            <a href="#contact">Contact</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
     <!--Header(end)-->
 
     <!--Home(start)-->
-    <section id="home">
-        <div class="content">
-            <h3>Hi there! Welcome to my portfolio.</h3>
-        </div>
-    </section>
+    <div id="home">
+        <img src="photograph.png" alt="Profile Photo" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h3>Hi there! Welcome to my portfolio.</h3>
+    </div>
     <!--Home(end)-->
 
     <!--About(start)-->
-    <section id="about">
-        <div class="content">
-            <h2>About Me</h2>
-            <hr>
-            <p>Hi, I’m Rushikesh Ikhe, a passionate web developer with a B.E. in Information and Technology. I specialize in creating dynamic and responsive web applications. Explore my portfolio to see my work and get to know more about me.
-                I am a recent graduate from NDMVPS College of Engineering in Nasik, with hands-on experience in full stack web development. My skills span across front-end and back-end technologies, and I have a strong foundation in programming languages like HTML, CSS, JavaScript, SQL, and Python. I love building efficient, scalable, and user-friendly web applications.
-    I do my work mainly in C-Language, C++ and JAVA. C++ and Data Structure and Algorithm are my stronger section. Besides these I know Web Development, LINUX and database as well.
-    This website is basically one of my Web Development project which is built using HTML only. Here one can also find ideas for projects in different languages. Thanks again for reading this, because of people like you, it exists and prospers!
-            </p>
+    <div id="about">
+        <h2>About Me</h2>
+        <hr>
+        <div>
             
+            <p>Hi, I’m Rushikesh Ikhe, a passionate web developer with a B.E. in Information and Technology. I specialize in creating dynamic and responsive web applications. Explore my portfolio to see my work and get to know more about me. I am a recent graduate from NDMVPS College of Engineering in Nasik, with hands-on experience in full stack web development. My skills span across front-end and back-end technologies, and I have a strong foundation in programming languages like HTML, CSS, JavaScript, SQL, and Python. I love building efficient, scalable, and user-friendly web applications. I do my work mainly in C-Language, C++ and JAVA. C++ and Data Structure and Algorithm are my stronger section. Besides these I know Web Development, LINUX and database as well. This website is basically one of my Web Development project which is built using HTML only. Here one can also find ideas for projects in different languages. Thanks again for reading this, because of people like you, it exists and prospers!</p>
         </div>
-    </section>
+    </div>
     <!--About(end)-->
 
     <!--Projects(start)-->
-    <section id="projects">
-        <div class="content">
-            <h2>Projects</h2>
-            <hr>
-            <ul><br>
-                <br>
-                <li>
-                    <b>E-commerce website for Cosmetic store</b>
-                    <a href="https://www.frankbody.com/int/?utm_referrer=https%3A%2F%2Fwww.google.com%2F">➲</a><br>
-                    Created a webpage that can run on Linux, Mac, and Windows. Used JavaScript, HTML, and CSS for UI to add functionalities to our webpage.<br>
-                    Tech used : HTML, CSS, JavaScript.
-                </li><br>
-                <br>
-                <li>
-                    <b>Doctor's Appointment System</b>
-                    <a href="https://main--docappointment.netlify.app/">➲</a><br>
-                    Developed a cross-platform webpage for scheduling doctor’s appointment. Implemented features using HTML, CSS, and JavaScript to create an intuitive user interface.<br>
-                    Tech used: HTML, CSS, JavaScript, SQL.
-                </li><br>
-                <br>
-                <li>
-                    <b>Artist Portfolio Showcase Web Page</b>
-                    <a href="https://creative-horse-caa20a.netlify.app/">➲</a><br>
-                    Designed a dynamic webpage enabling artists to exhibit their artwork seamlessly. Utilized HTML, CSS, and JavaScript to create an interactive platform showcasing various art pieces.<br>
-                    Tech used: HTML, CSS, JavaScript, SQL
-                </li><br>
-                <br>
-            </ul>
-        </div>
-    </section>
+    <div id="projects">
+        <h2>Projects</h2>
+        <hr>
+        <ul><br>
+            <br>
+            <li>
+                <b>E-commerce website for Cosmetic store</b><a href="https://www.frankbody.com/int/?utm_referrer=https%3A%2F%2Fwww.google.com%2F"> ➲</a>
+                <br>Created a webpage that can run on Linux, Mac, and Windows...
+                <br>Tech used: HTML, CSS, JavaScript.
+            </li><br>
+            <br>
+            <li>
+                <b>Doctor's Appointment System</b><a href="https://main--docappointment.netlify.app/"> ➲</a>
+                <br>Developed a cross-platform webpage for scheduling doctor’s appointment...
+                <br>Tech used: HTML, CSS, JavaScript, SQL.
+            </li><br>
+            <br>
+            <li>
+                <b>Artist Portfolio Showcase Web Page</b><a href="https://creative-horse-caa20a.netlify.app/"> ➲</a>
+                <br>Designed a dynamic webpage enabling artists to exhibit their artwork seamlessly...
+                <br>Tech used: HTML, CSS, JavaScript, SQL.
+            </li><br>
+            <br>
+        </ul>
+        <img src="WebDevelopmentProjects2.png" alt="Project" style="width: 100%; max-width: 500px;">
+    </div>
     <!--Projects(end)-->
 
     <!--Achievement(start)-->
-    <section id="achievements">
-        <div class="content">
-            <h2>Achievements</h2>
-            <hr>
-            <ul><br>
+    <div id="achievements">
+        <h2>Achievements</h2>
+        <hr>
+        <ul><br>
+            <br>
+            <li>
+                <b>Intern at STREAMLINE TECH PVT. LTD.</b>
+                <ul>
+                    <li>FEB,2023 - AUG,2023</li>
+                    <li>Web Development Intern</li>
+                </ul><br>
                 <br>
-                <li>
-                    <b>Intern at STREAMLINE TECH PVT. LTD.</b>
-                    <ul>
-                        <li>FEB,2023 - AUG,2023</li>
-                        <li>Web Development Intern</li>
-                    </ul><br>
-                    <br>
-                </li>
-                <li>
-                    <b>Elected as a NSS Co-Ordinator.</b>
-                    <ul>
-                        <li>AUG,2022 - JULY 2023.</li>
-                        <li>Co-ordinated different events and contributed to social work.</li>
-                    </ul><br>
-                    <br>
-                </li>
-                <li>
-                    <b>Finalist for the Smart India Hackathon 2023 at college Level.</b>
-                    <ul>
-                        <li>October,2023.</li>
-                        <li>Presented the Solution for the Real World problem faced by cognitive patients using the AR(AUGMENTED REALITY) Technology.</li>
-                    </ul><br>
-                    <br>
-                </li>
-            </ul>
-        </div>
-    </section>
+            </li>
+            <li>
+                <b>Elected as a NSS Co-Ordinator.</b>
+                <ul>
+                    <li>AUG,2022 - JULY 2023</li>
+                    <li>Co-ordinated different events and contributed to the social work.</li>
+                </ul><br>
+                <br>
+            </li>
+            <li>
+                <b>Finalist for the Smart India Hackathon 2023 at college Level.</b>
+                <ul>
+                    <li>October,2023</li>
+                    <li>Presented the solution for the real-world problem faced by cognitive patients using AR technology.</li>
+                </ul><br>
+                <br>
+            </li>
+        </ul>
+    </div>
     <!--Achievement(end)-->
 
     <!--Contact(start)-->
-    <section id="contact">
-        <div class="content">
-            <h2>Contact</h2>
-            <hr>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" size="40"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" size="40"><br><br>
-                <label for="number">Number:</label><br>
-                <input type="number" id="number" name="number" size="40"><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+    <div id="contact">
+        <h2>Contact</h2>
+        <hr>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="number">Number</label>
+            <input type="number" id="number" name="number">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     <!--Contact(end)-->
 
     <!--Footer1(start)-->
-    <footer id="footer1">
-        <p>
-            <b>LinkedIn</b> <a href="https://www.linkedin.com/in/rushikesh-ikhe-556527235/">➲</a> |
-            <b>GitHub</b> <a href="https://github.com/rushiikhe007">➲</a> |
-            <b>Email</b> <a href="mailto:rushikeshikhe70@gmail.com">➲</a> |
-            <b>Website</b> <a href="index.html">➲</a>
-        </p>
-    </footer>
+    <div id="footer">
+        <table>
+            <tr>
+                <td><b>LinkedIn</b> <a href="https://www.linkedin.com/in/rushikesh-ikhe-556527235/"> ➲</a></td>
+                <td>|</td>
+                <td><b>GitHub</b> <a href="https://github.com/rushiikhe007"> ➲</a></td>
+                <td>|</td>
+                <td><b>Email</b> <a href="mailto:rushikeshikhe70@gmail.com"> ➲</a></td>
+                <td>|</td>
+                <td><b>Website</b> <a href="index.html"> ➲</a></td>
+            </tr>
+        </table>
+    </div>
     <!--Footer1(end)-->
 
     <!--Footer2(start)-->
-    <footer id="footer2">
-        <p>© 2024 Rushikesh Ikhe | All Rights Reserved</p>
-    </footer>
+    <div id="footer2">
+        <table>
+            <tr>
+                <td>© 2024 Rushikesh Ikhe | All Rights Reserved</td>
+            </tr>
+        </table>
+    </div>
     <!--Footer2(end)-->
 </body>
 
